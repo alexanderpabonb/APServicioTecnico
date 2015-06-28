@@ -32,7 +32,7 @@
                 <div id="TextoPrincipal">
                 <article>
                     <h1>Noticias</h1>
-                        <p class="text-justify">asadd ahdadhsadfndsjfh adsjkf</p>
+                        <p class="text-justify">asadd afadsfsdffh adsjkf</p>
                 </article>
                 </div>
                 <div id="InicioSesion">
