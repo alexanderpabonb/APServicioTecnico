@@ -35,9 +35,9 @@
                     Los campos con (*) son campos obligatorios. <br>
                     Tipo Documento:* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <select class="form-control" id="TipoDocumento" name="TipoDocumento">
                         <option value> Seleccione</option>
-                        <option value> Nit</option>
-                        <option value> CC</option>
-                        <option value> Cedula extranjera</option>
+                        <option value="Nit"> Nit</option>
+                        <option value="CC"> CC</option>
+                        <option value="CE"> Cedula extranjera</option>
                                                         </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Documento:* &nbsp;&nbsp; <input type="text" id="Documento" name="Documento"  /><br>
                     Nombre Completo:* &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="NombreCompleto" name="NombreCompleto" placeholder=" "/> &nbsp;&nbsp;&nbsp;
@@ -49,12 +49,12 @@
                     Confirmar:* &nbsp;&nbsp;&nbsp;&nbsp; <input type="password" id="ConfirmarClave" name="ConfirmarClave" placeholder="Confirme contrase?a"/><br>
                     Pregunta seguridad:* &nbsp; <select class="form-control" id="PreguntaSeguridad" name="PreguntaSeguridad">
                                 <option value> Seleccione</option>
-                                <option value> Lugar de nacimiento de su madre </option>
-                                <option value> Nombre de su primera mascota </option>
-                                <option value> Color favorito </option>
+                                <option value="Lugar de nacimiento de su madre"> Lugar de nacimiento de su madre </option>
+                                <option value="Nombre de su primera mascota"> Nombre de su primera mascota </option>
+                                <option value="Color favorito"> Color favorito </option>
                             </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Respuesta:* &nbsp;&nbsp;&nbsp; <input type="text" id="Respuesta" name="Respuesta" placeholder=" "/><br>
-                    <center><button type="submit" value="Guardar">Registrar</button> <button type="reset" > Limpiar</button> </center>
+                    <center><button type="submit" value="Registrar"> Registrar</button> <button type="reset" > Limpiar</button> </center>
                 </form>
             </div>  
         </div>
