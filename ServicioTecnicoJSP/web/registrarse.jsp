@@ -45,8 +45,8 @@
                     Correo:* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" id="Correo" name="Correo" placeholder=" "/> <br>
                     
                     <br>
-                    Contrase?a:* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" id="Clave" name="Clave" placeholder="Escriba una contrase?a"/> &nbsp;&nbsp;&nbsp;&nbsp;
-                    Confirmar:* &nbsp;&nbsp;&nbsp;&nbsp; <input type="password" id="ConfirmarClave" name="ConfirmarClave" placeholder="Confirme contrase?a"/><br>
+                    Contrase&#241a:* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" id="Clave" name="Clave" placeholder="Escriba una contrase&#241a"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                    Confirmar:* &nbsp;&nbsp;&nbsp;&nbsp; <input type="password" id="ConfirmarClave" name="ConfirmarClave" placeholder="Confirme contrase&#241a"/><br>
                     Pregunta seguridad:* &nbsp; <select class="form-control" id="PreguntaSeguridad" name="PreguntaSeguridad">
                                 <option value> Seleccione</option>
                                 <option value="Lugar de nacimiento de su madre"> Lugar de nacimiento de su madre </option>
@@ -54,9 +54,10 @@
                                 <option value="Color favorito"> Color favorito </option>
                             </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Respuesta:* &nbsp;&nbsp;&nbsp; <input type="text" id="Respuesta" name="Respuesta" placeholder=" "/><br>
-                    <center><button type="submit" value="Registrar"> Registrar</button> <button type="reset" > Limpiar</button> </center>
+                    <br>
+                    <center><button type="submit" value="Registrar"> Guardar</button> <button type="submit" value="Buscar"> Consultar</button> <button type="submit" value="modificar"> Modificar</button> <button type="submit" value="eliminar"> Eliminar</button> <button type="reset" > Limpiar</button> </center>
                 </form>
-            </div>  
+            </div>
         </div>
     </body>
 </html>
