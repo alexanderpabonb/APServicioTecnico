@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link rel="stylesheet" type="text/css" href="Styleshhet.css">
-        <title>AP Servicio Tecnico</title>
+        <title>AP Servicio Técnico</title>
     </head>
     <body>
         <div id="contenido">

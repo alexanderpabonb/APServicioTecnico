@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link rel="stylesheet" type="text/css" href="Styleshhet.css">
-        <title>AP Servicio Tecnico</title>
+        <title>AP Servicio Técnico</title>
     </head>
     <body>
         <div id="contenido">
@@ -21,7 +21,7 @@
                     <div>
                         <ul id="menu">
                             <li><a href="index.jsp">Inicio</a></li>
-                            <li><a href="#">Nuestra empresa</a></li>
+                            <li><a href="NuestraEmpresa.jsp">Nuestra empresa</a></li>
                             <li><a href="#">Servicios</a></li>
                             <li><a href="contactenos.jsp">Contactenos</a></li>
                         </ul>
@@ -43,8 +43,8 @@
                             Usuario: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="idUsuario" name="idUsuario" placeholder="Usuario"/>
                             Contraseña: &nbsp;&nbsp; <input type="password" id="clave" name="clave" placeholder="Contraseña"/><br>
                             <br>
-                            <a href="RecordarClave.html" style="text-decoration: none">¿Olvido su contraseña?</a> <br>
-                            <button type="submit"><a id="link" href="MenuPrincipal.jsp">Ingresar</a></button> <button type="submit"><a id="link" href="registrarse.jsp"> Registrarse</a></button>
+                            <a href="RecordarClave.jsp" style="text-decoration: none">¿Olvido su contraseña?</a> <br>
+                            <button type="submit"><a id="link" href="MenuAdministrador.jsp">Ingresar</a></button> <button type="submit"><a id="link" href="registrarse.jsp"> Registrarse</a></button>
                     </form>
                 </div>
                 <br>
