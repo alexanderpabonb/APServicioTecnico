@@ -1,9 +1,8 @@
-<%-- 
+<%--
     Document   : registrarse
     Created on : 23-jun-2015, 22:04:45
     Author     : AlexPabon
 --%>
-<%@page import="Model.Usuario" %>
 <%@page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
 
 <!DOCTYPE html>
@@ -11,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <script src="https://ajax.googlepis.com/ajax/libs/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="Styleshhet.css">
         <title>AP Servicio Tecnico</title>
     </head>
@@ -55,9 +55,46 @@
                             </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Respuesta:* &nbsp;&nbsp;&nbsp; <input type="text" id="Respuesta" name="Respuesta" placeholder=" "/><br>
                     <br>
-                    <center><button type="submit" value="Registrar"> Guardar</button> <button type="submit" value="Buscar"> Consultar</button> <button type="submit" value="modificar"> Modificar</button> <button type="submit" value="eliminar"> Eliminar</button> <button type="reset" > Limpiar</button> </center>
+                    <center>
+                        <input type="submit" id="guardar" name="guardar" value="Guardar"/> 
+                            <button type="submit" value="botonConsultar"> Consultar</button> 
+                            <button type="submit" value="modificar"> Modificar</button> 
+                            <button type="submit" value="botonEliminar"> Eliminar</button> 
+                            <button type="reset" > Limpiar</button> 
+                    </center>
                 </form>
             </div>
         </div>
+        <%@page import="DAO.userDao" %>
+            <%@page import="Model.Usuario"%>
+                <% 
+                    boolean guardar = false,
+                            consultar = false,
+                            eliminar = false;
+
+                    if (request.getParameter("botonGuardar") != null){
+                        guardar = true;
+                    }
+                    if (request.getParameter("botonConsultar") != null){
+                        consultar = true;
+                    }
+                    if (request.getParameter("botonEliminar") != null){
+                        eliminar = true;
+                    }
+
+                    if (guardar){
+                        Usuario usuario = new Usuario();
+                        usuario.setIdusuario("idusuario");
+                        usuario.setTipodocumento(request.getParameter("tipodocumento"));
+                        usuario.setDocumento(request.getParameter("documento"));
+                        usuario.setNombrecompleto(request.getParameter("nombrecompleto"));
+                        usuario.setCorreo(request.getParameter("correo"));
+                        usuario.setClave(request.getParameter("clave"));
+                        usuario.setConfirmarclave(request.getParameter("confirmarclave"));
+                        usuario.setPreguntasecreta(request.getParameter("preguntasecreta"));
+                        DAO.userDao connection = new DAO.userDao();
+                        connection.addUsuario(usuario);
+                    }
+                %>                
     </body>
 </html>

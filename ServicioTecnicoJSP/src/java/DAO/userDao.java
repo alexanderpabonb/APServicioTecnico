@@ -29,8 +29,7 @@ public class userDao {
 
     public void addUsuario(Usuario usuario) {
         try {
-            PreparedStatement preparedStatement = connection
-                    .prepareStatement("insert into users(idusuario,tipodocumento,documento,nombrecompleto,correo,clave,confirmarclave,preguntasecreta,respuesta) values (?, ?, ?, ?, ?, ?, ?, ?, ? )");
+            PreparedStatement preparedStatement = connection.prepareStatement("insert into users(idusuario,tipodocumento,documento,nombrecompleto,correo,clave,confirmarclave,preguntasecreta,respuesta) values (?, ?, ?, ?, ?, ?, ?, ?, ? )");
             // Parameters start with 1
             preparedStatement.setString(1, usuario.getIdusuario());
             preparedStatement.setString(2, usuario.getTipodocumento());

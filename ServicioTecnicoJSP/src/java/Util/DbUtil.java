@@ -27,8 +27,8 @@ public class DbUtil {
 
                 System.out.println("Driver loaded");
 
-                String userName = "SYSTEM";
-                String password = "0707";
+                String userName = "SERVICIOTECNICO";
+                String password = "universo";
 
                 //String url = "jdbc:sqlserver://localhost:1433" + ";databaseName=UserDB";
                 String url = "jdbc:oracle:thin:@localhost:1521:XE";
